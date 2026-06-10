@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo"><span>Syscall</span>Society</div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="glow-blob"></div>
+    <div class="hero-eyebrow">// Discord Server</div>
+    <h1 class="hero-title">
+      Системне<br>
+      програму<span class="accent">вання</span><br>
+      <span class="dim">українською</span>
+    </h1>
+
+    <div class="terminal">
+      <div class="terminal-bar">
+        <div class="dot dot-r"></div>
+        <div class="dot dot-y"></div>
+        <div class="dot dot-g"></div>
+      </div>
+      <div class="terminal-line">
+        <span class="prompt">$ </span>
+        <span id="typed-text"></span><span class="cursor"></span>
+      </div>
+    </div>
+
+    <div class="hero-actions">
+      <a href="https://discord.gg/D8k8y6MWY" target="_blank" class="btn-primary">
+        <svg width="18" height="14" viewBox="0 0 71 55" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M60.1 4.9A58.5 58.5 0 0 0 45.6.7a.2.2 0 0 0-.2.1 40.7 40.7 0 0 0-1.8 3.7 54 54 0 0 0-16.3 0A37.5 37.5 0 0 0 25.5.8a.2.2 0 0 0-.2-.1 58.3 58.3 0 0 0-14.5 4.2.2.2 0 0 0-.1.1C1.6 19.5-.9 33.7.3 47.7v.1a58.8 58.8 0 0 0 18 9.1.2.2 0 0 0 .2-.1 42 42 0 0 0 3.6-5.9.2.2 0 0 0-.1-.3 38.7 38.7 0 0 1-5.5-2.6.2.2 0 0 1 0-.4l1.1-.8a.2.2 0 0 1 .2 0C28.4 52 39.5 52 50.4 47a.2.2 0 0 1 .2 0l1.1.8a.2.2 0 0 1 0 .4 36 36 0 0 1-5.5 2.6.2.2 0 0 0-.1.3 47.1 47.1 0 0 0 3.6 5.9.2.2 0 0 0 .2.1 58.6 58.6 0 0 0 18.1-9.1v-.1c1.5-15.8-2.6-29.9-10.9-42.1a.2.2 0 0 0-.1 0ZM23.7 39.4c-3.5 0-6.4-3.2-6.4-7.2s2.8-7.2 6.4-7.2c3.6 0 6.5 3.3 6.4 7.2 0 3.9-2.8 7.2-6.4 7.2Zm23.6 0c-3.5 0-6.4-3.2-6.4-7.2s2.8-7.2 6.4-7.2c3.6 0 6.5 3.3 6.4 7.2 0 3.9-2.8 7.2-6.4 7.2Z" />
+        </svg>
+        Приєднатись до серверу
+      </a>
+    </div>
+  </section>
+
+  <!-- DIRECTIONS SECTION - заміни весь блок на цей -->
+  <section id="directions">
+    <div class="directions-header reveal">
+      <div class="section-label">// напрями</div>
+      <h2 class="section-title">Що обговорюємо</h2>
+      <p>Ми зібрали під одним дахом усі ключові напрями системного програмування — від ядра ОС до власних мов
+        програмування.</p>
+    </div>
+    <div class="dirs-grid reveal">
+      <div class="dir-card">
+        <svg class="dir-icon" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16v16H4z" />
+          <path d="M8 8h8v8H8z" />
+          <path d="M12 12v4" />
+          <circle cx="12" cy="12" r="1" />
+        </svg>
+        <div class="dir-name">OS Development</div>
+        <div class="dir-desc">Розробка операційних систем, ядер та драйверів</div>
+      </div>
+
+      <div class="dir-card">
+        <svg class="dir-icon" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="4" width="16" height="16" rx="2" />
+          <circle cx="8" cy="8" r="2" />
+          <circle cx="16" cy="16" r="2" />
+          <path d="M12 12v4" />
+        </svg>
+        <div class="dir-name">Embedded</div>
+        <div class="dir-desc">Програмування мікроконтролерів, прошивок та робота із залізом</div>
+      </div>
+
+      <div class="dir-card">
+        <svg class="dir-icon" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <path d="M14 2v6h6" />
+          <path d="M9 15l3-3 3 3" />
+          <path d="M12 12v6" />
+        </svg>
+        <div class="dir-name">Engine Dev</div>
+        <div class="dir-desc">Створення ігрових, фізичних та графічних рушіїв</div>
+      </div>
+
+      <div class="dir-card">
+        <svg class="dir-icon" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <path d="M14 2v6h6" />
+          <path d="M16 13H8" />
+          <path d="M16 17H8" />
+        </svg>
+        <div class="dir-name">Language Dev</div>
+        <div class="dir-desc">Розробка власних мов, компіляторів та віртуальних машин</div>
+      </div>
+
+      <div class="dir-card">
+        <svg class="dir-icon" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2" />
+          <path d="M9 12h6" />
+          <path d="M12 9v6" />
+        </svg>
+        <div class="dir-name">Infrastructure</div>
+        <div class="dir-desc">Нутрощі СУБД, мережеві стеки та контейнеризація</div>
+      </div>
+
+      <div class="dir-card">
+        <svg class="dir-icon" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <path d="M14 2v6h6" />
+          <path d="M4 6h16M4 12h16M4 18h7" />
+        </svg>
+        <div class="dir-name">System Libraries</div>
+        <div class="dir-desc">Написання низькорівневих утиліт та бібліотек</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section id="why">
+    <div class="why-text reveal">
+      <div class="section-label">// чому ми</div>
+      <h2 class="section-title">Ніша, яку давно потрібно було закрити</h2>
+      <p>Ми створили цей сервер, щоб закрити нішу системного програмування в українському ІТ-просторі.</p>
+      <p>Специфіка серверу робить його цінним для тих, хто <span class="highlight">дійсно потребує</span> саме
+        системного програмування — а не загальних обговорень.</p>
+      <p>Тут ти знайдеш людей, які думають на рівні машинного коду, регістрів, тактів процесора, а також пишуть свої
+        рушії, бібліотки та компілятори</p>
+    </div>
+    <div class="stats-box reveal">
+      <div class="stat-cell">
+        <span class="stat-num" id="stat-members">Багато</span>
+        <span class="stat-label">майстрів своєї справи</span>
+      </div>
+      <div class="stat-cell">
+        <span class="stat-num" id="stat-online">Частий</span>
+        <span class="stat-label">актив</span>
+      </div>
+      <div class="stat-cell">
+        <span class="stat-num">Багато</span>
+        <span class="stat-label">напрямів</br>(в сист. програмуванні)</span>
+      </div>
+      <div class="stat-cell">
+        <span class="stat-num">Мова серверу</span>
+        <span class="stat-label">українська</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTHORS -->
+  <section id="authors">
+
+    <div class="section-label reveal">// автори</div>
+    <h2 class="section-title reveal">Хто стоїть за проєктом</h2>
+
+    <p class="authors-desc reveal">
+      Ми тут, щоб створити ком'юніті експертів, де люди об'єднуються навколо
+      цікавості до технологій, систем та глибокого розуміння того, як усе працює.
+    </p>
+
+
+    <div class="authors-wrapper reveal">
+
+      <div class="author-photo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW5-xt0twCF95BIEw38iomFf9e7meb1JEpxw&s"
+          alt="author">
+      </div>
+
+
+      <div class="handshake">
+        🤝
+      </div>
+
+
+      <div class="author-photo">
+        <img src="https://i.pinimg.com/236x/1d/7b/16/1d7b1675e68da602dbbf26371ce24c83.jpg" alt="author">
+      </div>
+
+    </div>
+
+
+
+    <div class="author-cards reveal">
+
+      <div class="author-card">
+        <h3>@erthmaster</h3>
+        <span>Founder / System Developer</span>
+        <p>
+          Розвиває напрям системного програмування
+          та будує технічну основу спільноти.
+        </p>
+      </div>
+
+
+      <div class="author-card">
+        <h3>@annposhtak</h3>
+        <span>Co-Founder / System Developer</span>
+        <p>
+          Працює над розвитком серверу,
+          ідеями спільноти та створенням простору для розробників.
+        </p>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- LANGUAGES -->
+  <section id="languages">
+    <div class="reveal">
+      <div class="section-label">// мови</div>
+      <h2 class="section-title">Практикуємо на реальному залізі</h2>
+    </div>
+    <div class="langs-row reveal">
+      <span class="lang-tag featured">C</span>
+      <span class="lang-tag featured">C++</span>
+      <span class="lang-tag featured">Rust</span>
+      <span class="lang-tag featured">Zig</span>
+      <span class="lang-tag featured">Assembly</span>
+      <span class="lang-tag featured">Odin</span>
+      <span class="lang-tag featured">C#</span>
+    </div>
+
+    <div class="reveal" style="margin-top: 2.5rem;">
+
+      <p style="color: var(--steel2); font-size: 0.82rem; margin-top: 0.75rem;">
+        Також раді бачити розробників й на інших мовах.
+        Хоча основна тематика серверу — низькорівневе та системне програмування, ми все одно раді кожному, хто хоче
+        розвиватися в цьому напрямку.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="section-label reveal">// приєднатись</div>
+    <h2 class="section-title reveal">Готовий копнути глибше?</h2>
+    <p class="reveal">Ми чекаємо тих, хто не боїться сегфолтів і розуміє, чому `undefined behavior` — це не баг, а
+      виклик.</p>
+    <a href="https://discord.gg/D8k8y6MWY" target="_blank" class="btn-primary reveal" style="display:inline-flex;">
+      <svg width="18" height="14" viewBox="0 0 71 55" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M60.1 4.9A58.5 58.5 0 0 0 45.6.7a.2.2 0 0 0-.2.1 40.7 40.7 0 0 0-1.8 3.7 54 54 0 0 0-16.3 0A37.5 37.5 0 0 0 25.5.8a.2.2 0 0 0-.2-.1 58.3 58.3 0 0 0-14.5 4.2.2.2 0 0 0-.1.1C1.6 19.5-.9 33.7.3 47.7v.1a58.8 58.8 0 0 0 18 9.1.2.2 0 0 0 .2-.1 42 42 0 0 0 3.6-5.9.2.2 0 0 0-.1-.3 38.7 38.7 0 0 1-5.5-2.6.2.2 0 0 1 0-.4l1.1-.8a.2.2 0 0 1 .2 0C28.4 52 39.5 52 50.4 47a.2.2 0 0 1 .2 0l1.1.8a.2.2 0 0 1 0 .4 36 36 0 0 1-5.5 2.6.2.2 0 0 0-.1.3 47.1 47.1 0 0 0 3.6 5.9.2.2 0 0 0 .2.1 58.6 58.6 0 0 0 18.1-9.1v-.1c1.5-15.8-2.6-29.9-10.9-42.1a.2.2 0 0 0-.1 0ZM23.7 39.4c-3.5 0-6.4-3.2-6.4-7.2s2.8-7.2 6.4-7.2c3.6 0 6.5 3.3 6.4 7.2 0 3.9-2.8 7.2-6.4 7.2Zm23.6 0c-3.5 0-6.4-3.2-6.4-7.2s2.8-7.2 6.4-7.2c3.6 0 6.5 3.3 6.4 7.2 0 3.9-2.8 7.2-6.4 7.2Z" />
+      </svg>
+      Приєднатись безкоштовно
+    </a>
+    <a href="https://discord.gg/D8k8y6MWY" class="cta-discord-link" target="_blank">discord.gg/D8k8y6MWY</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>Syscall Society UA © 2026</span>
+    <span>Системне програмування — українською</span>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
