@@ -441,12 +441,16 @@ section {
 
 .dirs-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1px;
     background: var(--dim);
     border: 1px solid var(--dim);
     border-radius: 6px;
     overflow: hidden;
+}
+
+.dir-card:last-child {
+    grid-column: 1 / -1;
 }
 
 .dir-card {
@@ -469,6 +473,20 @@ section {
     height: 42px;
     margin-bottom: 1rem;
     transition: transform 0.25s ease;
+}
+
+@media(max-width:768px) {
+    .dirs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dir-card:last-child {
+        display: block;
+    }
+
+    .dir-card:last-child .dir-icon {
+        margin-bottom: 1rem;
+    }
 }
 
 /* ── WHY ── */
