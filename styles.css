@@ -159,3 +159,23 @@ footer { border-top: 1px solid var(--dim); padding: 2rem 10vw; display: flex; ju
     *, *::before, *::after { animation: none !important; transition: none !important; }
     .reveal { opacity: 1; transform: none; }
 }
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.8rem;
+        line-height: 0.9;
+        word-break: break-word;
+    }
+
+    .btn-primary {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.hero-title {
+    font-family: var(--font-title);
+    font-weight: 800;
+    font-size: clamp(2.5rem, 10vw, 7rem);
+    line-height: 0.95;
+}
